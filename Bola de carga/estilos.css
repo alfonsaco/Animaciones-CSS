@@ -1,0 +1,41 @@
+body div:nth-child(1){
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: solid rgb(122,122,253) 10px;
+    border-bottom: rgba(0,0,0,0) 10px solid;
+    margin: 0 auto;
+    margin-top: 200px;
+    animation: giro 1s infinite linear;
+}
+
+body div:nth-child(2){
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: solid rgb(122,122,253) 10px;
+    border-bottom: rgba(0,0,0,0) 10px solid;
+    margin: 0 auto;
+    margin-top: 80px;
+    animation: giro 3s infinite cubic-bezier(0.1,1,1,8);
+}
+
+body div:nth-child(3){
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: solid rgb(122,122,253)8px;
+    border-top: rgba(0,0,0,0)8px solid;
+    margin: 0 auto;
+    margin-top: 80px;
+    animation: giro 1s infinite ease;
+}
+
+@keyframes giro {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
