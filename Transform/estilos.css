@@ -1,0 +1,80 @@
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+}
+
+section{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+section div{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.div1{
+    background-color: goldenrod;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.div1:hover{
+    transform: translate(30px, 30px);
+}
+
+.div2{
+    background-color: goldenrod;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.div2:hover{
+    transform: rotate(-40deg);
+}
+
+.div3{
+    background-color: goldenrod;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.div3:hover{
+    transform: scale(1.5);
+}
+
+.div4{
+    background-color: goldenrod;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.div4:hover{
+    transform: scaleX(0.5);
+}
+
+.div5{
+    background-color: goldenrod;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.div5:hover{
+    transform: skew(30deg);
+}
+
+.div6{
+    background-color: goldenrod;
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+.div6:hover{
+    transform: rotateX(60deg) rotateY(30deg);
+}
