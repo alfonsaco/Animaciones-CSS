@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.exterior div{
+    width: 40px;
+    height: 60px;
+    background-color: rgb(25, 25, 134);
+    display: inline-block;
+    margin: 0 5px;
+    animation: carga 3s infinite ease;
+}
+
+.exterior div:nth-child(2){
+    animation-delay: 200ms;
+}
+.exterior div:nth-child(3){
+    animation-delay: 400ms;
+}
+
+@keyframes carga {
+    from{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body{
+        background-color: black;
+    }
+}
