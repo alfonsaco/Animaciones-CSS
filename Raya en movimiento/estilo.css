@@ -1,0 +1,26 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    width: 600px;
+    height: 6px;
+    background-color: brown;
+
+    animation: raya 2s infinite ease-in-out;
+}
+
+@keyframes raya {
+    from{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
