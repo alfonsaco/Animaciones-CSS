@@ -1,0 +1,31 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+
+#texto{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-top: 200px;
+    padding: 5px 20px;
+    border-radius: 100px;
+    border: solid 1.5px rgb(44, 44, 44);
+}
+#texto:active{
+    animation: temblor 0.09s;
+}
+#texto:focus{
+    background-color: rgb(254, 255, 244);
+}
+@keyframes temblor {
+    from{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(3deg);
+    }
+    to{
+        transform: rotate(-3deg);
+    }
+}
+
