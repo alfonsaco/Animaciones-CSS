@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(107, 0, 0), rgb(100, 65, 0));
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 25px;
+    transition: .2s;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    transition: .4s;
+}
+
+nav ul:hover li a{
+    filter: blur(10px);
+    opacity: .4;
+    transition: .1s;
+}
+
+nav ul li a:hover{
+    filter: none;
+    opacity: 1;
+}
+nav ul li:hover{
+    scale: 2;
+}
