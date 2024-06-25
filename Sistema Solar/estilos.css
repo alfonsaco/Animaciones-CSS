@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(0, 0, 43);
+    background-image: url(Imágenes/Espacio.jpeg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* EL SOL */
+.sol {
+    width: 200px;
+    height: 200px;
+    background-image: url(Imágenes/Sol.png);
+    background-size: cover;
+    animation: girar 60s infinite linear;
+    position: absolute;
+    filter: drop-shadow(0px 0px 10px #ffa733);
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* MERCURIO */
+.mercurio {
+    width: 250px;
+    height: 250px;
+    animation: girar 10s infinite linear -7s;
+    position: absolute;
+}
+.mercurio > div {
+    width: 15px;
+    height: 15px;
+    background-image: url(Imágenes/Mercurio.png);
+    background-size: cover;
+    animation: girar 20s infinite linear;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* VENUS */
+.venus {
+    width: 300px;
+    height: 300px;
+    animation: girar 20s infinite linear -6s;
+    position: absolute;
+}
+.venus > div {
+    width: 20px;
+    height: 20px;
+    background-image: url(Imágenes/Venus.png);
+    background-size: cover;
+    animation: girar 20s infinite linear;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* LA TIERRA */
+.tierra {
+    width: 350px;
+    height: 350px;
+    animation: girar 30s infinite linear -5s;
+    position: absolute;
+}
+.tierra > div {
+    width: 25px;
+    height: 25px;
+    background-image: url(Imágenes/La\ Tierra.png);
+    background-size: cover;
+    animation: girar 20s infinite linear;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* MARTE */
+.marte {
+    width: 400px;
+    height: 400px;
+    animation: girar 35s infinite linear -10s;
+    position: absolute;
+}
+.marte > div {
+    width: 24px;
+    height: 24px;
+    background-image: url(Imágenes/Marte.png);
+    background-size: cover;
+    animation: girar 20s infinite linear;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* JÚPITER */
+.jupiter {
+    width: 550px;
+    height: 550px;
+    animation: girar 50s infinite linear;
+    position: absolute;
+}
+.jupiter > div {
+    width: 90px;
+    height: 90px;
+    background-image: url(Imágenes/Jupiter.png);
+    background-size: cover;
+    animation: girar 50s infinite linear reverse;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* SATURNO */
+.saturno {
+    width: 700px;
+    height: 700px;
+    animation: girar 60s infinite linear -10s;
+    position: absolute;
+}
+.saturno > div {
+    width: 180px;
+    height: 80px;
+    position: relative;
+    top: -20px;
+    left: -70px;
+    background-image: url(Imágenes/Saturno.png);
+    background-size: cover;
+    animation: girar 60s infinite linear reverse -10s;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* URANO */
+.urano {
+    width: 850px;
+    height: 850px;
+    animation: girar 60s infinite linear;
+    position: absolute;
+}
+.urano > div {
+    width: 40px;
+    height: 40px;
+    background-image: url(Imágenes/Urano.png);
+    background-size: cover;
+    animation: girar 60s infinite linear reverse;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+/* NEPTUNO */
+.neptuno {
+    width: 1050px;
+    height: 1050px;
+    animation: girar 80s infinite linear;
+    position: absolute;
+}
+.neptuno > div {
+    width: 40px;
+    height: 40px;
+    background-image: url(Imágenes/Neptuno.png);
+    background-size: cover;
+    animation: girar 90s infinite linear reverse;
+    filter: drop-shadow(0px 0px 10px #000000);
+}
