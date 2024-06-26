@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 142);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CENTRAR ELEMENTOS EN EL CENTRO*/
+.centrar{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+/*ESTILOS DE LAS IMÁGENES*/
+div:nth-child(4) img{
+    width: 130px;
+    transform: scaleX(-1);
+    padding: 20px 0;
+}
+div div:last-child img{
+    transform: scaleX(-1);
+}
+img{
+    width: 100px;
+    transition: transform 0.2s ease;
+}
+/*ESTE ES EL HOVER PARA QUE SE MUEVAN HACIA ARRIBA*/
+img:hover{
+    transform: translateY(-10px); 
+}
+/*DEBIDO A LA ESPECIFICIDAD, AL TENER UN TRANSFORM SCALEX(-1) YA APLICADO, NO LE HARÁ EFECT
+ESTE HOVER, POR TANTO, CREAMOS OTRO PARA ESTAS ÚLTIMAS 2 IMÁGENES APLICANDO LA PROPIEDAD A ANIMAR
+Y LA PROPIEDAD QUE LE HEMOS PUESTO POR DEFECTO*/
+div:nth-child(4) img:hover, div div:last-child img:hover{
+    transform: scaleX(-1) translateY(-10px);
+}
+
+
+.centrar div {
+    position: relative;
+    display: inline-block;
+}
+
+.centrar div::after {
+    content: attr(data-name); /*CON ESTO CONECTAMOS CON EL ATRIBUTO data-name QUE HAYAMOS AGREGADO A LOS DIV DEL HTML*/
+    position: absolute;
+    top: -60px;
+    left: 50%; /*MOVEMOS EL ::AFTER HACIA LA MITAD DEL ANCHO DEL DIV*/
+    transform: translateX(-50%); /*AJUSTAMOS LA POSICIÓN DESPUÉS DE HABERLO MOVIDO AL 50%, CENTRANDO HORIZONTALMENTE EL ELEMENTO FRENTE AL DIV*/
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+/*AL HACER HOVER NOS MOSTRARÁ EL CUADRO DE TEXTO*/
+.centrar div:hover::after {
+    opacity: 1;
+}
