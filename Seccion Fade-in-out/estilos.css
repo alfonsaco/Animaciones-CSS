@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(44, 43, 49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inicial{
+    background-color: rgba(70, 69, 71, 0.4);
+    border-radius: 20px;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*PARA PASAR EL COLOR NEGRO A BLANCO*/
+div img{
+    filter: contrast(0) brightness(100);
+    width: 90px;
+
+    transition: width 0.5s ease;
+}
+.inicial div{
+    background-color: rgb(55, 158, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+
+    transition: border-radius 0.4s ease,
+                width 0.4s ease,
+                height 0.4s ease;
+}
+
+.inicial:hover div{
+    border-radius: 40px;
+    width: 110px;
+    height: 110px;
+    position: relative;
+
+    transition-duration: 1s;
+}
+.inicial:hover img{
+    width: 70px;
+
+    transition-duration: 1s;
+}
